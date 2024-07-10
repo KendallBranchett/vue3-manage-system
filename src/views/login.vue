@@ -18,7 +18,10 @@
                         <el-checkbox class="pwd-checkbox" label="记住密码" />
                         <el-link type="primary">忘记密码</el-link>
                     </div>
-                    <el-button class="login-btn" type="primary" size="large" >登录</el-button>
+                    <el-button class="login-btn" type="primary" size="large">登录</el-button>
+                    <p class="login-text">
+                        没有账号？<el-link type="primary">立即注册</el-link>
+                    </p>
                 </el-form>
             </div>
         </div>
@@ -47,11 +50,36 @@ const formLabelAlign = reactive({
     background: url(../assets/img/login-bg.jpg) center/cover no-repeat;
 }
 
+.login-container {
+    width: 450px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 40px 50px 50px;
+    box-sizing: border-box;
+}
+
 .login-header {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+}
+
+.pwd-tips {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin: -10px 0 10px;
+    color: #787878;
+}
+
+.login-text {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #787878;
 }
  
 </style>
